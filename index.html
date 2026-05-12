@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+<html lang="en" class="scroll-smooth">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ALAMIN Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+
+            font-family: 'Inter', sans-serif;
+
+            background-color: #ffffff;
+
+            color: #1a1a1a;
+
+        }
+
+        .glass-nav {
+
+            background: rgba(255, 255, 255, 0.85);
+
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+        }
+
+        .reveal {
+
+            opacity: 0;
+
+            transform: translateY(30px);
+
+            transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1);
+
+        }
+
+        .reveal.active {
+
+            opacity: 1;
+
+            transform: translateY(0);
+
+        }
+
+        .education-card {
+
+            border-left: 2px solid #e2e8f0;
+
+            transition: all 0.3s ease;
+
+        }
+
+        .education-card:hover {
+
+            border-left-color: #4f46e5;
+
+            background-color: #f8fafc;
+
+        }
+
+        .skill-tag {
+
+            transition: all 0.3s ease;
+
+        }
+
+        .skill-tag:hover {
+
+            background-color: #4f46e5;
+
+            color: white;
+
+            transform: scale(1.05);
+
+        }
+
+    </style>
+
+</head>
+
+<body class="selection:bg-indigo-100 selection:text-indigo-900">
+
+
+
+    <nav class="fixed w-full z-50 glass-nav">
+
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+
+            <a href="#" class="text-xl font-bold tracking-tight text-gray-900">ALAMIN<span class="text-indigo-600">.</span></a>
+
+            <div class="hidden md:flex space-x-10 text-xs font-bold uppercase tracking-widest text-gray-500">
+
+                <a href="#about" class="hover:text-indigo-600 transition">About</a>
+
+                <a href="#education" class="hover:text-indigo-600 transition">Education</a>
+
+                <a href="#projects" class="hover:text-indigo-600 transition">Work</a>
+
+                <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+
+                <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+
+            </div>
+
+            <a href="#contact" class="hidden md:block bg-gray-900 text-white px-5 py-2 rounded-full text-xs font-bold hover:bg-indigo-600 transition">HIRE ME</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <section class="min-h-screen flex items-center pt-20 px-6">
+
+        <div class="max-w-6xl mx-auto w-full">
+
+            <div class="max-w-4xl">
+
+                <p class="text-indigo-600 font-bold mb-6 tracking-[0.2em] uppercase text-sm">Undergraduate Student @ CSE</p>
+
+                <h1 class="text-6xl md:text-8xl font-bold leading-[1.1] mb-8 tracking-tighter">
+
+                    I'm <span class="text-gray-900">Mohammed ALAMIN</span>, exploring the future of <span class="text-gray-300">Software.</span>
+
+                </h1>
+
+                <p class="text-xl text-gray-500 mb-12 leading-relaxed max-w-2xl font-light">
+
+                    Currently pursuing Computer Science & Engineering. Passionate about academic excellence while building modern web solutions using the MERN stack.
+
+                </p>
+
+                <div class="flex flex-wrap gap-6">
+
+                    <a href="#education" class="bg-indigo-600 text-white px-10 py-5 rounded-xl font-semibold hover:bg-indigo-700 transition shadow-2xl shadow-indigo-200">Academic Profile</a>
+
+                    <a href="#projects" class="group flex items-center text-gray-900 font-semibold py-5">
+
+                        View Projects
+
+                        <i class="fas fa-arrow-right ml-3 transform group-hover:translate-x-2 transition"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="about" class="py-32 bg-white px-6">
+
+        <div class="max-w-6xl mx-auto">
+
+            <div class="grid md:grid-cols-2 gap-20 items-start">
+
+                <div class="reveal">
+
+                    <h2 class="text-sm font-bold text-indigo-600 uppercase tracking-widest mb-4">The Student Profile</h2>
+
+                    <h3 class="text-4xl font-bold mb-8 leading-tight text-gray-900">Blending Theory with Practical Engineering.</h3>
+
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+
+                        As a CSE undergraduate, my primary focus is mastering the fundamentals of computer science—from algorithms to system design. I believe that a strong academic foundation is the key to becoming a versatile engineer.
+
+                    </p>
+
+                    <p class="text-gray-600 text-lg leading-relaxed">
+
+                        Currently, I am expanding my horizons into <strong>Full-Stack Web Development</strong>, specifically focusing on the MERN (MongoDB, Express, React, Node.js) ecosystem to bring my theoretical knowledge to life.
+
+                    </p>
+
+                </div>
+
+                <div class="reveal grid grid-cols-2 gap-6">
+
+                    <div class="p-8 bg-gray-50 rounded-3xl border border-gray-100">
+
+                        <h4 class="text-3xl font-bold text-gray-900 mb-1">3.8+</h4>
+
+                        <p class="text-gray-500 text-sm font-medium uppercase tracking-wider">Current CGPA</p>
+
+                    </div>
+
+                    <div class="p-8 bg-gray-50 rounded-3xl border border-gray-100">
+
+                        <h4 class="text-3xl font-bold text-gray-900 mb-1">5th</h4>
+
+                        <p class="text-gray-500 text-sm font-medium uppercase tracking-wider">Semester</p>
+
+                    </div>
+
+                    <div class="p-8 bg-gray-50 rounded-3xl border border-gray-100">
+
+                        <h4 class="text-3xl font-bold text-gray-900 mb-1">5+</h4>
+
+                        <p class="text-gray-500 text-sm font-medium uppercase tracking-wider">Projects</p>
+
+                    </div>
+
+                    <div class="p-8 bg-gray-50 rounded-3xl border border-gray-100">
+
+                        <h4 class="text-3xl font-bold text-gray-900 mb-1">10+</h4>
+
+                        <p class="text-gray-500 text-sm font-medium uppercase tracking-wider">Skills</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="education" class="py-32 bg-gray-50 px-6">
+
+        <div class="max-w-6xl mx-auto">
+
+            <div class="mb-20 reveal">
+
+                <h2 class="text-sm font-bold text-indigo-600 uppercase tracking-widest mb-4">Academic Journey</h2>
+
+                <h3 class="text-4xl font-bold text-gray-900">Education Profile</h3>
+
+            </div>
+
+
+
+            <div class="space-y-6 max-w-5xl">
+
+                <!-- Undergraduate -->
+
+                <div class="bg-white p-10 rounded-3xl border border-gray-100 education-card reveal">
+
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+
+                        <h4 class="text-2xl font-bold text-gray-900">B.Sc. in Computer Science & Engineering</h4>
+
+                        <span class="text-indigo-600 font-bold text-sm bg-indigo-50 px-4 py-1 rounded-full mt-2 md:mt-0 w-max">2021 — PRESENT</span>
+
+                    </div>
+
+                    <p class="text-lg text-gray-600 font-medium">CCN University of Science & Technology</p>
+
+                    <p class="text-gray-500 mt-4 leading-relaxed italic">Key focus: Data Structures, Operating Systems, Database Management Systems, and Software Engineering Principles.</p>
+
+                </div>
+
+
+
+                <!-- HSC -->
+
+                <div class="bg-white p-10 rounded-3xl border border-gray-100 education-card reveal">
+
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+
+                        <h4 class="text-2xl font-bold text-gray-900">Higher Secondary Certificate (HSC)</h4>
+
+                        <span class="text-gray-400 font-bold text-sm bg-gray-50 px-4 py-1 rounded-full mt-2 md:mt-0 w-max">2018 — 2020</span>
+
+                    </div>
+
+                    <p class="text-lg text-gray-600 font-medium">Alekjan Memorial High School & College</p>
+
+                    <p class="text-gray-500 mt-4">Group : Science | Result: GPA 5.00</p>
+
+                </div>
+
+
+
+                <!-- SSC -->
+
+                <div class="bg-white p-10 rounded-3xl border border-gray-100 education-card reveal">
+
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+
+                        <h4 class="text-2xl font-bold text-gray-900">Secondary School Certificate (SSC)</h4>
+
+                        <span class="text-gray-400 font-bold text-sm bg-gray-50 px-4 py-1 rounded-full mt-2 md:mt-0 w-max">2016 — 2018</span>
+
+                    </div>
+
+                    <p class="text-lg text-gray-600 font-medium">Alekjan Memorial High School & College</p>
+
+                    <p class="text-gray-500 mt-4">Science Stream | Academic Excellence Award Recipient.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="projects" class="py-32 bg-white px-6">
+
+        <div class="max-w-6xl mx-auto">
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 reveal">
+
+                <div>
+
+                    <h2 class="text-sm font-bold text-indigo-600 uppercase tracking-widest mb-4">Practical Work</h2>
+
+                    <h3 class="text-4xl font-bold text-gray-900">Selected Projects</h3>
+
+                </div>
+
+                <p class="text-gray-500 max-w-xs mt-6 md:mt-0">Applications built while applying classroom theories to real-world scenarios.</p>
+
+            </div>
+
+
+
+            <div class="grid md:grid-cols-2 gap-12">
+
+                <div class="group reveal">
+
+                    <div class="relative overflow-hidden rounded-[2rem] aspect-[4/3] bg-gray-100 mb-8">
+
+                        <img src="https://placehold.co/800x600/4f46e5/ffffff?text=MERN+Social+App" alt="MERN App" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+
+                            <button class="bg-white text-black px-6 py-3 rounded-full font-bold text-sm">View Demo</button>
+
+                            <button class="bg-white/20 backdrop-blur-md text-white border border-white/30 px-6 py-3 rounded-full font-bold text-sm">GitHub</button>
+
+                        </div>
+
+                    </div>
+
+                    <h4 class="text-2xl font-bold mb-3">Academic Management System</h4>
+
+                    <p class="text-gray-500 leading-relaxed">A full-stack MERN application designed to manage student records and course registrations efficiently.</p>
+
+                </div>
+
+
+
+                <div class="group reveal">
+
+                    <div class="relative overflow-hidden rounded-[2rem] aspect-[4/3] bg-gray-100 mb-8">
+
+                        <img src="https://placehold.co/800x600/10b981/ffffff?text=Portfolio+Engine" alt="Project 2" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+
+                            <button class="bg-white text-black px-6 py-3 rounded-full font-bold text-sm">View Demo</button>
+
+                            <button class="bg-white/20 backdrop-blur-md text-white border border-white/30 px-6 py-3 rounded-full font-bold text-sm">GitHub</button>
+
+                        </div>
+
+                    </div>
+
+                    <h4 class="text-2xl font-bold mb-3">Algorithm Visualizer</h4>
+
+                    <p class="text-gray-500 leading-relaxed">A React-based visualizer for common Data Structures and Algorithms, helping students grasp complex concepts.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="skills" class="py-32 bg-slate-900 text-white px-6 rounded-[3rem] mx-4 md:mx-10 mb-20">
+
+        <div class="max-w-6xl mx-auto">
+
+            <div class="mb-20 text-center reveal">
+
+                <h2 class="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-4">Expertise</h2>
+
+                <h3 class="text-4xl font-bold">Technical Skillset</h3>
+
+            </div>
+
+
+
+            <div class="grid md:grid-cols-3 gap-16">
+
+                <div class="reveal">
+
+                    <div class="flex items-center gap-4 mb-8">
+
+                        <div class="w-10 h-10 bg-indigo-500/20 rounded-lg flex items-center justify-center">
+
+                            <i class="fas fa-code text-indigo-400"></i>
+
+                        </div>
+
+                        <h4 class="text-xl font-bold">Frontend Dev</h4>
+
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+
+                        <span class="skill-tag bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm font-medium">React.js</span>
+
+                        <span class="skill-tag bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm font-medium">Tailwind CSS</span>
+
+                        <span class="skill-tag bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm font-medium">Redux</span>
+
+                        <span class="skill-tag bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm font-medium">HTML5/CSS3</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="reveal">
+
+                    <div class="flex items-center gap-4 mb-8">
+
+                        <div class="w-10 h-10 bg-emerald-500/20 rounded-lg flex items-center justify-center">
+
+                            <i class="fas fa-server text-emerald-400"></i>
+
+                        </div>
+
+                        <h4 class="text-xl font-bold">Backend & Database</h4>
+
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+
+                        <span class="skill-tag bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm font-medium">Node.js</span>
+
+                        <span class="skill-tag bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm font-medium">Express.js</span>
+
+                        <span class="skill-tag bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm font-medium">MongoDB</span>
+
+                        <span class="skill-tag bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm font-medium">MySQL</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="reveal">
+
+                    <div class="flex items-center gap-4 mb-8">
+
+                        <div class="w-10 h-10 bg-amber-500/20 rounded-lg flex items-center justify-center">
+
+                            <i class="fas fa-terminal text-amber-400"></i>
+
+                        </div>
+
+                        <h4 class="text-xl font-bold">Computer Science</h4>
+
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+
+                        <span class="skill-tag bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm font-medium">Data Structures</span>
+
+                        <span class="skill-tag bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm font-medium">Algorithms</span>
+
+                        <span class="skill-tag bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm font-medium">Git / GitHub</span>
+
+                        <span class="skill-tag bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm font-medium">C / C++</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="contact" class="py-32 px-6">
+
+        <div class="max-w-4xl mx-auto text-center reveal">
+
+            <h2 class="text-6xl font-bold mb-10 tracking-tight">Let's connect.</h2>
+
+            <p class="text-xl text-gray-500 mb-12">Currently open to internship opportunities, research collaborations, or software projects.</p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+
+                <a href="mailto:your.email@example.com" class="bg-gray-900 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-indigo-600 transition shadow-xl">Send an Email</a>
+
+                <a href="#" class="border border-gray-200 text-gray-900 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-gray-50 transition">Download Resume</a>
+
+            </div>
+
+           
+
+            <div class="mt-20 flex justify-center space-x-12">
+
+                <a href="https://github.com/ALAMIN2134" class="text-gray-400 hover:text-indigo-600 transition text-2xl"><i class="fab fa-linkedin"></i></a>
+
+                <a href="#" class="text-gray-400 hover:text-indigo-600 transition text-2xl"><i class="fab fa-github"></i></a>
+
+                <a href="#" class="text-gray-400 hover:text-indigo-600 transition text-2xl"><i class="fab fa-facebook"></i></a>
+
+                <a href="#" class="text-gray-400 hover:text-indigo-600 transition text-2xl"><i class="fab fa-google"></i></a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer class="py-12 border-t border-gray-100 text-center">
+
+        <p class="text-gray-400 text-sm font-medium uppercase tracking-[0.2em]">
+
+            &copy; <span id="year"></span> Mohammed ALAMIN | CSE UNDERGRADUATE
+
+        </p>
+
+    </footer>
+
+
+
+    <script>
+
+        // Set dynamic year
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+
+
+        // Optimized Reveal on Scroll
+
+        const revealElements = document.querySelectorAll('.reveal');
+
+       
+
+        const reveal = () => {
+
+            const triggerBottom = window.innerHeight * 0.85;
+
+            revealElements.forEach(el => {
+
+                const elTop = el.getBoundingClientRect().top;
+
+                if (elTop < triggerBottom) {
+
+                    el.classList.add('active');
+
+                }
+
+            });
+
+        };
+
+
+
+        window.addEventListener('scroll', reveal);
+
+        // Run once on load
+
+        window.addEventListener('load', reveal);
+
+
+
+        // Smooth scrolling for navigation links
+
+        document.querySelectorAll('nav a').forEach(anchor => {
+
+            anchor.addEventListener('click', function(e) {
+
+                const targetId = this.getAttribute('href');
+
+                if (targetId.startsWith('#')) {
+
+                    e.preventDefault();
+
+                    document.querySelector(targetId).scrollIntoView({
+
+                        behavior: 'smooth'
+
+                    });
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
